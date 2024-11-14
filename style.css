@@ -1,0 +1,676 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9F9F9;
+             }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2A2A40;
+            padding: 15px 40px;
+            color: #FFFFFF;
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+           text-decoration: none;
+            font-size: 16px;
+            opacity: 0.8;
+
+        }
+
+        .navbar .nav-links a:hover {
+                              opacity: 1;
+                          }
+
+        .navbar .subscribe-btn {
+            padding: 8px 16px;
+            background-color: white;
+            color: #2A2A40;
+            border: none;
+           cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .navbar .subscribe-btn:hover {
+                              background-color: #f0f0f0;
+                          }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('/assets/Client-First - IMAGES/homeimg.svg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn-read-more {
+            padding: 10px 20px;
+            background-color: #FFC107;
+            color: #2A2A40;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Featured Post & All Posts */
+        .post-section {
+            display: flex;
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .featured-post, .all-posts {
+            flex: 1;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 20px;
+        }
+
+        .post h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .post p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .post a {
+            color: #FFC107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .view-all {
+                              text-align: right;
+                              margin-bottom: 10px;
+                              font-size: 14px;
+                          }
+                  
+                          .view-all a {
+                              color: #FFC107;
+                              text-decoration: none;
+                          }
+
+        /* About Us and Mission Section */
+        .about-us-mission {
+            display: flex;
+            gap: 20px;
+            background-color: #F2F2F7;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .about-box {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-box h3 {
+            font-size: 18px;
+            color: #777;
+            text-transform: uppercase;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-box h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+.about-us-mission-container {
+    position: relative;
+    padding-top: 0.1mm;
+}
+
+/* Style for the shapes */
+.shape {
+    position:absolute;
+    top: 0;
+    z-index: 1;
+}
+.shape-left {
+    left: 0;
+    transform: translate(50%, 50%); 
+    gap: none;
+}
+
+.shape-right {
+    right: 0;
+    transform: translate(-58%, 50%);
+    gap: none;
+}
+/* Category Section */
+        .category-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .category-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .category-cards {
+            display: flex;
+            justify-content:center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .category-card {
+            background-color: #fff;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            height: 150px;
+            text-align:left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .category-card p{
+            color: #777;
+            font-size: 14px;
+        }
+
+        .category-card:hover {
+            background-color:#FFD050 ;
+            color:  #F4F4F4 ;
+            
+                          }
+
+     /* Why We Started Section */
+        .why-we-started {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .why-we-started img {
+            width: 50%;
+            border-radius: 8px;
+        }
+
+        .why-content {
+            flex: 1;
+        }
+
+        .why-content h3 {
+            font-size: 14px;
+            color: #777;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .why-content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .why-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .navbar, .about-us-mission, .post-section, .why-we-started {
+                flex-direction: column;
+            }
+
+            .navbar nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .hero {
+                height: auto;
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+ 
+
+body, h2, h3, p, button {
+                              margin: 0;
+                              padding: 0;
+                              font-family: Arial, sans-serif;
+                          }
+                          
+                          
+                              /* Authors Section */
+                              .authors-section {
+                                text-align:center;
+                                padding: 20px;
+                                margin-bottom: 50px;
+                            }
+                            
+                            .author-cards {
+                                display: flex;
+                                justify-content: center;
+                                gap: 15px;
+                                padding:20px;
+                                margin: 20px;
+                                background-color: #f9f9f9; /* Light background color for contrast */
+                                border-radius: 8px;
+                            }
+
+                           .author-cards p{
+                               font-size: 1rem;
+                               color: #555;
+                               margin-bottom: 10px;
+                           }
+
+                           .author-cards h3{
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                           }
+                               
+                           .author-card {
+                                background-color: #F4F0F8;
+                                padding: 10px;
+                                border-radius: 8px;
+                                text-align:center;
+                                width: 200px;
+                                transition: transform 0.3s;
+                            }
+                            
+                          .author-card:hover {
+                                transform: scale(1.05);
+                                background-color: #FBF6EA
+                                ;
+                            }
+
+                            .author-card img {
+                                border-radius: 50%;
+                                width: 80px;
+                            }
+                            
+                            .social-icons i {
+                                margin: 5px;
+                                color: #333;
+                                cursor: pointer;
+                            }
+                            
+                            .social-icons i:hover {
+                                color: #ffcc00;
+                            }
+                            
+                        
+                
+                          
+                          /* Featured In Section */
+                          .featured-in {
+                              text-align: center;
+                              padding: 20px;
+                          }
+                          
+                          .logos img {
+                              margin: 0 10px;
+                          }
+                          
+                          /* Testimonials Section */
+                          /* Testimonials Section Styling */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Overall background color for section */
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 1.4rem;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+/* Left side (text and title) with a soft yellow background */
+.testimonial-text {
+    text-align: left;
+    background-color: #fff8dc; /* Soft yellow background */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 60%;
+}
+
+.testimonial-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Right side (author details) */
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    max-width: 30%;
+}
+
+.testimonial-author p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-author p:last-child {
+    color: #888;
+}
+
+/* Navigation Buttons */
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.testimonial-nav button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.testimonial-nav button:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    background-color: #ffbf00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonial-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-text, .testimonial-author {
+        max-width: 100%;
+    }
+}
+
+/* Join Our Team Section Styling */
+.join-our-team {
+    background-color: #f9f9f9; /* Light background color for the section */
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.join-our-team h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.join-our-team p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Join Now Button Styling */
+.join-now-button {
+    background-color: #ffd700; /* Bright yellow background */
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-now-button:hover {
+    background-color: #ffbf00;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .join-our-team {
+        padding: 40px 10px;
+    }
+
+    .join-our-team h2 {
+        font-size: 1.5rem;
+    }
+
+    .join-our-team p {
+        font-size: 0.9rem;
+    }
+
+    .join-now-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+                   /* Footer Styling */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:white; /* Yellow color for logo */
+    margin-bottom: 20px;
+}
+
+/* Newsletter Subscription */
+.newsletter p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subscription-form button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    color: #ddd;
+    margin: 0;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 8px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-content, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}
+
+                          
+                        
